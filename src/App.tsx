@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { HealthPackages } from './components/HealthPackages';
@@ -15,18 +14,7 @@ import { Newsletter } from './components/Newsletter';
 import { Footer } from './components/Footer';
 import { FloatingCallButton } from './components/FloatingCallButton';
 
-// TODO: Implement proper error boundary
-// TODO: Add loading states for async data
-// TODO: Setup analytics/tracking
-
 export default function App() {
-  useEffect(() => {
-    // Debug: Log app initialization
-    if (process.env.NODE_ENV === 'development') {
-      console.log('App initialized');
-    }
-  }, []);
-
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
